@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #2a2a2a #0d0d0d;
+  }
+
+  html::-webkit-scrollbar {
+    width: 6px;
+  }
+  html::-webkit-scrollbar-track {
+    background: #0d0d0d;
+  }
+  html::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 3px;
+  }
+  html::-webkit-scrollbar-thumb:hover {
+    background: #3a3a3a;
+  }
+
+  body {
+    background-color: #080808;
+    color: #f0f0f0;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-bg-primary font-mono font-semibold px-4 py-2 rounded-sm 
+           hover:bg-accent-dim transition-all duration-150 text-sm
+           focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-bg-primary;
+  }
+  
+  .btn-ghost {
+    @apply border border-bg-border text-text-secondary font-mono text-sm px-4 py-2 rounded-sm
+           hover:border-bg-border-bright hover:text-text-primary transition-all duration-150
+           focus:outline-none focus:ring-1 focus:ring-accent;
+  }
+
+  .btn-icon {
+    @apply p-2 rounded-sm text-text-secondary hover:text-text-primary 
+           hover:bg-bg-hover transition-all duration-150;
+  }
+
+  .card {
+    @apply bg-bg-card border border-bg-border rounded-sm shadow-card;
+  }
+
+  .input {
+    @apply bg-bg-tertiary border border-bg-border text-text-primary font-mono text-sm
+           px-3 py-2 rounded-sm w-full outline-none
+           focus:border-accent focus:ring-1 focus:ring-accent/30
+           placeholder:text-text-muted transition-all duration-150;
+  }
+
+  .tag-pill {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-mono;
+  }
+
+  .priority-dot {
+    @apply w-1.5 h-1.5 rounded-full flex-shrink-0;
+  }
+}
+
+/* Drag overlay */
+.drag-overlay {
+  opacity: 0.9;
+  transform: rotate(1.5deg) scale(1.02);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 255, 136, 0.15);
+}
+
+/* Calendar grid */
+.calendar-day-hover {
+  transition: background 0.1s ease, border-color 0.1s ease;
+}
+.calendar-day-hover:hover {
+  background: rgba(255,255,255,0.02);
+  border-color: #2a2a2a;
+}
+.calendar-day-hover.drag-over {
+  background: rgba(0, 255, 136, 0.04);
+  border-color: rgba(0, 255, 136, 0.3);
+}
