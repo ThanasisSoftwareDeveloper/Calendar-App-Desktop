@@ -40,7 +40,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'devcalendar_project.urls'
+ROOT_URLCONF = 'Calendar-App-Desktop_project.urls'
 
 TEMPLATES = [
     {
@@ -58,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'devcalendar_project.wsgi.application'
+WSGI_APPLICATION = 'Calendar-App-Desktop_project.wsgi.application'
 
 # Database - PostgreSQL
 DATABASES = {
