@@ -1,4 +1,4 @@
-# 🗓️ DevCalendar
+# 🗓️ Calendar-App-Desktop
 
 > A developer-grade task & calendar desktop app with Google Calendar sync, Gmail integration, and drag-and-drop scheduling. Built for daily use and GitHub portfolio.
 
@@ -59,8 +59,8 @@ devcalendar/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/devcalendar.git
-cd devcalendar
+git clone https://github.com/ThanasisSoftwareDeveloper/Calendar-App-Desktop.git
+cd Calendar-App-Desktop
 ```
 
 ---
