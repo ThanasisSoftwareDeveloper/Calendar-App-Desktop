@@ -123,7 +123,7 @@ In a new terminal:
 
 ```bash
 cd backend
-source venv/bin/activate
+source venv/bin/activate (for win: venv\Scripts\activate)
 
 # Start Celery worker
 celery -A devcalendar_project worker -l info
