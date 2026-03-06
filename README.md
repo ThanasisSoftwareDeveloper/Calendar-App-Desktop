@@ -68,7 +68,7 @@ cd Calendar-App-Desktop
 ### 2. Google Cloud Console Setup
 
 1. Go to [console.cloud.google.com](https://console.cloud.google.com/)
-2. Create a new project → **DevCalendar**
+2. Create a new project → **Calendar-App-Desktop**
 3. Go to **APIs & Services** → **Enable APIs**:
    - Gmail API
    - Google Calendar API
