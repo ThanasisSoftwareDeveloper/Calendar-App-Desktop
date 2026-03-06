@@ -4,7 +4,7 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'devcalendar_project.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'calendar-app-desktop.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
