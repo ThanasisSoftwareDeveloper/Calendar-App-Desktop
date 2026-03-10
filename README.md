@@ -51,7 +51,7 @@ Calendar-App-Desktop/
 - **Node.js** 18+
 - **Python** 3.11+
 - **PostgreSQL** 15+
-- **Redis** (for Celery task queue / reminders)
+- **Redis** (for Celery task queue / reminders) with: a) WSL2, or b) Docker (also it uses WSL2 for Windows), or c) Docker Desktop.
 - A **Google Cloud Console** project with OAuth2 credentials
 
 ---
