@@ -72,7 +72,7 @@ cd Calendar-App-Desktop
 3. Go to **APIs & Services** → **Enable APIs**:
    - Gmail API
    - Google Calendar API
-   - Google+ API (for profile info)
+   - Google People API (insted of Google+, for profile info)
 4. Go to **APIs & Services** → **OAuth consent screen**:
    - User Type: External
    - Add scopes: `gmail.readonly`, `gmail.send`, `calendar`, `userinfo.email`, `userinfo.profile`
