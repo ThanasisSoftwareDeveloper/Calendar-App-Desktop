@@ -57,7 +57,7 @@ Calendar-App-Desktop/
 ---
 
 ### 1. Clone the repo
-Download Github and use PowerShell:
+Download Github and use PowerShell ("Git Bash"):
 ```bash
 git clone https://github.com/ThanasisSoftwareDeveloper/Calendar-App-Desktop.git
 cd Calendar-App-Desktop
