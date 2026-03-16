@@ -74,9 +74,11 @@ cd Calendar-App-Desktop
    - Google Calendar API
    - Google People API (insted of Google+, for profile info)
 4. Go to **APIs & Services** → **OAuth consent screen**:
-   - "Audience": External: Save
-   - User Type: External
-   - 
+   - "Audience" → External → Save
+   - "Data Access" → "Add or Remove Scopes"
+   - "Credentials" → "+ Create Credentials" → "OAuth client ID",
+   - Application type: Web application,
+   - Redirect URI: http://localhost:8000/api/auth/google/callback/
    - Add scopes: `gmail.readonly`, `gmail.send`, `calendar`, `userinfo.email`, `userinfo.profile`
 6. Go to **Credentials** → **Create Credentials** → **OAuth 2.0 Client IDs**:
    - Application type: **Web application**
