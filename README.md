@@ -77,8 +77,10 @@ cd Calendar-App-Desktop
    - "Audience" → External → Save
    - "Data Access" → "Add or Remove Scopes"
    - "Credentials" → "+ Create Credentials" → "OAuth client ID",
-   - Application type: Web application,
+   - Application type: Web application, Name: default (Web client 1)
    - Redirect URI: http://localhost:8000/api/auth/google/callback/
+   - Create
+   - Coppy or Download: Client ID και Client Secret
    - Add scopes: `gmail.readonly`, `gmail.send`, `calendar`, `userinfo.email`, `userinfo.profile`
 6. Go to **Credentials** → **Create Credentials** → **OAuth 2.0 Client IDs**:
    - Application type: **Web application**
