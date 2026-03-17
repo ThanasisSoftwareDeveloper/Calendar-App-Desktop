@@ -28,3 +28,5 @@ dist/
 *.key
 credentials.json
 token.json
+.env.txt 
+.env 
