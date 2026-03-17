@@ -4,6 +4,9 @@ Calendar App Desktop Django Settings
 import os
 from pathlib import Path
 from datetime import timedelta
+from dotenv import load_dotenv
+load_dotenv()
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,7 +43,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Calendar-App-Desktop_project.urls'
+ROOT_URLCONF = 'devcalendar_project.urls'
 
 TEMPLATES = [
     {
@@ -58,7 +61,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Calendar-App-Desktop_project.wsgi.application'
+WSGI_APPLICATION = 'devcalendar_project.wsgi.application'
 
 # Database - PostgreSQL
 DATABASES = {
