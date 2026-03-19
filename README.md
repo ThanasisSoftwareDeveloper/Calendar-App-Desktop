@@ -185,7 +185,6 @@ cd Calendar-App-Desktop/frontend
 npm run dev
 ```
 - Open `http://localhost:5173` and...
-- Enjoy it!!!
 
 <img width="1050" height="562" alt="image" src="https://github.com/user-attachments/assets/32b4c879-df32-4e4d-864f-3a7f1ada8b62" />
 
@@ -193,6 +192,10 @@ npm run dev
 ### Sign In
 - Click **Continue with Google**
 - Authorize the required permissions
+- Enjoy it!!!
+
+<img width="1356" height="632" alt="image" src="https://github.com/user-attachments/assets/6289ce19-c8cc-48b8-9f8e-d1abc4eeca02" />
+
 
 ### Creating Tasks
 - **Double-click** any day in Month view to add a task
