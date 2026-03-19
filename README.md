@@ -157,8 +157,40 @@ npm run dev
 
 ## 📖 Usage
 
+### Opening
+You need to use four (4) powershell:
+- Redis (through WSL2)
+```powershell
+wsl
+redis-server
+```
+
+- Django Backend
+```powershell
+cd Calendar-App-Desktop/backend
+venv\Scripts\activate
+python manage.py runserver
+```
+
+- Celery (για reminders/sync)
+```powershell
+cd Calendar-App-Desktop/backend
+venv\Scripts\activate
+celery -A devcalendar_project worker -l info
+```
+
+- React Frontend
+```powershell
+cd Calendar-App-Desktop/frontend
+npm run dev
+```
+- Open `http://localhost:5173` and...
+- Enjoy it!!!
+<img width="1050" height="562" alt="image" src="https://github.com/user-attachments/assets/32b4c879-df32-4e4d-864f-3a7f1ada8b62" />
+<img width="1050" height="562" alt="image" src="https://github.com/user-attachments/assets/32b4c879-df32-4e4d-864f-3a7f1ada8b62" />
+
+
 ### Sign In
-- Open `http://localhost:5173`
 - Click **Continue with Google**
 - Authorize the required permissions
 
