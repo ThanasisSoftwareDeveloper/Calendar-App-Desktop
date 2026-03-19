@@ -191,7 +191,7 @@ npm run dev
 
 ### Sign In
 - Click **Continue with Google**
-- Authorize the required permissions
+- Authorize the required permissions, and
 - Enjoy it!!!
 
 <img width="1356" height="632" alt="image" src="https://github.com/user-attachments/assets/6289ce19-c8cc-48b8-9f8e-d1abc4eeca02" />
