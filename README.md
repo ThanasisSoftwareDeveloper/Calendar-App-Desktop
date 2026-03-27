@@ -10,7 +10,7 @@
 
 ---
 
-> ⚠️ **Note:** This project started as a desktop application and the name **"Calendar App Desktop"** was kept for continuity — even though it now runs primarily as a web app. Perhaps a slightly wrong decision, but that's how it happened!
+> ⚠️ **Note:** This project started as a desktop application and the name **"Calendar App Desktop"** was kept for continuity, even though it now runs primarily as a web app. Perhaps a slightly wrong decision, but that's how it happened!
 
 ---
 
