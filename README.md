@@ -151,7 +151,7 @@ CORS_ALLOWED_ORIGINS=      # Vercel frontend URL (production)
 
 This project started as a **desktop application** (Electron + React) for daily personal use and as a portfolio piece. Over time it evolved into a **full-stack web app** with a Django REST API backend, deployed on Vercel + Render + Supabase.
 
-The name "Calendar App Desktop" was kept throughout — arguably incorrectly — but it reflects the history of the project.
+The name "Calendar App Desktop" was kept throughout, arguably incorrectly, but it reflects the history of the project.
 
 ---
 
