@@ -66,7 +66,7 @@
 | `DATABASE_URL` | (το Supabase URL από Βήμα 1) |
 | `GOOGLE_CLIENT_ID` | (το Google Client ID σου) |
 | `GOOGLE_CLIENT_SECRET` | (το Google Client Secret σου) |
-| `GOOGLE_REDIRECT_URI` | `https://calendar-app-desktop-backend.onrender.com/api/auth/google/callback/` |
+| `GOOGLE_REDIRECT_URI` | `https://calendar-app-desktop.vercel.app/auth/callback/` |
 | `CELERY_BROKER_URL` | (το Upstash URL από Βήμα 2) |
 | `CELERY_RESULT_BACKEND` | (το Upstash URL από Βήμα 2) |
 
