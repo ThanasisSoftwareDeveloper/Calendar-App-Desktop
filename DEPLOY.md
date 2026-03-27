@@ -121,7 +121,7 @@
 ---
 
 ## ✅ Η εφαρμογή είναι live στο:
-### `https://calendar-app-desktop-uxov.vercel.app`
+### `https://calendar-app-desktop.vercel.app`
 
 
 ---
