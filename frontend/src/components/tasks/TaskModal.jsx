@@ -55,7 +55,10 @@ export default function TaskModal() {
       category: form.category || null,
       tag_ids: form.tag_ids,
       reminder_at: form.reminder_at || null,
+      time: form.time || null,
+      end_time: form.end_time || null,
     }
+    
     try {
       if (isEdit) {
         const { data } = await tasksAPI.update(editingTask.id, payload)
