@@ -18,7 +18,7 @@
 
 ### 👉 [calendar-app-desktop.vercel.app](https://calendar-app-desktop.vercel.app)
 
-Fully functional web application — no installation required, runs directly in the browser.
+Fully functional web application, no installation required, runs directly in the browser.
 
 - **Frontend:** Vercel → `https://calendar-app-desktop.vercel.app`
 - **Backend API:** Render → `https://calendar-app-desktop-backend.onrender.com`
