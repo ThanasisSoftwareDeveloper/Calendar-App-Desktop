@@ -157,7 +157,7 @@ The name "Calendar App Desktop" was kept throughout, arguably incorrectly, but i
 
 ## 📄 License
 
-MIT — free to use, modify, and build upon.
+MIT, free to use, modify, and build upon.
 
 ---
 
