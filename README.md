@@ -31,14 +31,14 @@ Fully functional web application — no installation required, runs directly in 
 ## ✨ Features
 
 - 📅 **Month / Week / Day views** with smooth animations
-- 🔀 **Drag & Drop** — move tasks between any days
-- ✅ **Full task management** — title, description, date, time, priority, status, category, tags
-- 🔗 **Google OAuth** — sign in with your Google account
-- 📧 **Gmail import** — automatically turn labeled emails into tasks
-- 📤 **Gmail reminders** — get notified via email before deadlines
-- 🔄 **Google Calendar 2-way sync** — keep events in sync across both apps
-- 🌙 **Dark theme** — terminal-inspired UI built for developers
-- 📱 **Responsive** — works in browser and on mobile
+- 🔀 **Drag & Drop** - move tasks between any days
+- ✅ **Full task management** - title, description, date, time, priority, status, category, tags
+- 🔗 **Google OAuth** - sign in with your Google account
+- 📧 **Gmail import** - automatically turn labeled emails into tasks
+- 📤 **Gmail reminders** - get notified via email before deadlines
+- 🔄 **Google Calendar 2-way sync** - keep events in sync across both apps
+- 🌙 **Dark theme** - terminal-inspired UI built for developers
+- 📱 **Responsive** - works in browser and on mobile
 
 ---
 
