@@ -15,8 +15,8 @@ export default function GoogleCallback() {
       navigate('/login')
       return
     }
-
-    fetch(`/api/auth/google/callback/?code=${code}`)
+    const apiUrl = import.meta.env.VITE_API_URL || ''
+    fetch(`${apiUrl}/api/auth/google/callback/?code=${code}`)
       .then(r => r.json())
       .then(data => {
         if (data.access) {
