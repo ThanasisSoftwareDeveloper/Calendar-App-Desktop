@@ -1,6 +1,6 @@
 # 🗓️ Calendar App Desktop
 
-> Started as a desktop app — evolved into a **full-stack web application**.
+> Started as a desktop app, evolved into a **full-stack web application**.
 
 ![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)
 ![Django](https://img.shields.io/badge/Django-4.2-092E20?style=flat-square&logo=django)
