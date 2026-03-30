@@ -161,4 +161,4 @@ MIT, free to use, modify, and build upon.
 
 ---
 
-Built by [Thanasis Koufos](https://www.thanasis-codes.eu) · [GitHub](https://github.com/ThanasisSoftwareDeveloper) · [Portfolio](https://www.thanasis-codes.eu)
+Built by [Thanasis-Codes](https://www.thanasis-codes.eu) · [GitHub](https://github.com/ThanasisSoftwareDeveloper) · [Portfolio](https://www.thanasis-codes.eu)
