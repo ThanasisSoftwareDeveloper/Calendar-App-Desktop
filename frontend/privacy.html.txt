@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Calendar App Desktop</title>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: April 3, 2025</p>
+
+  <h2>1. Data We Access</h2>
+  <p>Calendar App Desktop accesses your Google Calendar data solely to display 
+  and manage your calendar events within the app.</p>
+
+  <h2>2. How We Use Your Data</h2>
+  <p>We use your Google Calendar data only to provide the core functionality 
+  of the app. We do not sell, share, or store your data on our servers.</p>
+
+  <h2>3. Data Retention</h2>
+  <p>We do not retain your Google Calendar data. All data is processed 
+  locally and is not stored beyond your session.</p>
+
+  <h2>4. Contact</h2>
+  <p>For questions, contact us at: thanasis20007@gmail.com</p>
+</body>
+</html>
