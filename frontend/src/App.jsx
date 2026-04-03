@@ -4,6 +4,9 @@ import { useAuthStore } from './store'
 import LoginPage from './pages/LoginPage'
 import CalendarPage from './pages/CalendarPage'
 import GoogleCallback from './pages/GoogleCallback'
+import PrivacyPage from './pages/PrivacyPage'
+import TermsPage from './pages/TermsPage'
+
 
 function PrivateRoute({ children }) {
   const { accessToken } = useAuthStore()
@@ -21,6 +24,8 @@ export default function App() {
             <CalendarPage />
           </PrivateRoute>
         } />
+        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/terms" element={<TermsPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Toaster
