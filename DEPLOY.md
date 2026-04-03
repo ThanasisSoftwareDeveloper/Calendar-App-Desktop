@@ -1,4 +1,11 @@
-# 🚀 Deployment Guide — 30 Λεπτά για να είσαι Live
+---
+
+## ✅ Η εφαρμογή πλέον είναι live στο:
+### `https://calendar-app-desktop.vercel.app`
+
+---
+
+# 🚀 Deployment Guide — 30 Λεπτά για να γινει Live!
 
 ## Links
 | Service | Link | Κόστος |
