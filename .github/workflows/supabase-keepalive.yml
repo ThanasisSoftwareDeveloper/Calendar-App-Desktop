@@ -38,9 +38,11 @@ jobs:
           "
       - name: Ping Upstash Redis
         env:
-          UPSTASH_REDIS_URL: ${{ secrets.UPSTASH_REDIS_URL }}
+          UPSTASH_REDIS_REST_URL: ${{ secrets.UPSTASH_REDIS_REST_URL }}
+          UPSTASH_REDIS_REST_TOKEN: ${{ secrets.UPSTASH_REDIS_REST_TOKEN }}
         run: |
           node -e "
-          const url = process.env.UPSTASH_REDIS_URL;
-          fetch(url + '/ping').then(r => r.text()).then(t => console.log('Redis ping:', t));
+          fetch(process.env.UPSTASH_REDIS_REST_URL + '/ping', {
+            headers: { Authorization: 'Bearer ' + process.env.UPSTASH_REDIS_REST_TOKEN }
+          }).then(r => r.text()).then(t => console.log('Redis ping:', t));
           "
