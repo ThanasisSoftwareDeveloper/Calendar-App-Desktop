@@ -36,3 +36,11 @@ jobs:
               else console.log('Supabase ping successful!');
             });
           "
+      - name: Ping Upstash Redis
+        env:
+          UPSTASH_REDIS_URL: ${{ secrets.UPSTASH_REDIS_URL }}
+        run: |
+          node -e "
+          const url = process.env.UPSTASH_REDIS_URL;
+          fetch(url + '/ping').then(r => r.text()).then(t => console.log('Redis ping:', t));
+          "
