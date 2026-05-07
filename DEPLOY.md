@@ -5,7 +5,7 @@
 
 ---
 
-# 🚀 Deployment Guide — 30 Λεπτά για να γινει Live!
+# 🚀 Deployment Guide
 
 ## Links
 | Service | Link | Κόστος |
