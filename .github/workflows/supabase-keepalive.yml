@@ -2,8 +2,8 @@ name: Supabase Keep Alive
 
 on:
   schedule:
-    - cron: '0 9 */2 * *'  # every 2 days, runs at 9:00 UTC
-  workflow_dispatch:        # Και manual trigger αν θες
+    - cron: '0 9 */2 * *'  # Κάθε 2 μέρες
+  workflow_dispatch:
 
 jobs:
   ping:
@@ -14,35 +14,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-
-      - name: Install Supabase client
-        run: npm install @supabase/supabase-js --force
-
-      - name: Ping Supabase
+      - name: Ping Supabase REST API
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
-          node -e "
-          const { createClient } = require('@supabase/supabase-js');
-          const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_ANON_KEY);
-          supabase.from('auth_user').select('count', { count: 'exact', head: true })
-            .then(({ error }) => {
-              if (error) console.log('Ping error (expected if table missing):', error.message);
-              else console.log('Supabase ping successful!');
-            });
-          "
+          curl -s -o /dev/null -w "%{http_code}" \
+            "$SUPABASE_URL/rest/v1/auth_user?select=count" \
+            -H "apikey: $SUPABASE_SERVICE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_SERVICE_KEY" \
+            && echo " - Supabase ping successful!"
+
       - name: Ping Upstash Redis
         env:
           UPSTASH_REDIS_REST_URL: ${{ secrets.UPSTASH_REDIS_REST_URL }}
           UPSTASH_REDIS_REST_TOKEN: ${{ secrets.UPSTASH_REDIS_REST_TOKEN }}
         run: |
-          node -e "
-          fetch(process.env.UPSTASH_REDIS_REST_URL + '/ping', {
-            headers: { Authorization: 'Bearer ' + process.env.UPSTASH_REDIS_REST_TOKEN }
-          }).then(r => r.text()).then(t => console.log('Redis ping:', t));
-          "
+          curl -s "$UPSTASH_REDIS_REST_URL/ping" \
+            -H "Authorization: Bearer $UPSTASH_REDIS_REST_TOKEN" \
+            && echo " - Redis ping successful!"
