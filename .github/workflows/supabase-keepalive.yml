@@ -14,16 +14,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Ping Supabase REST API
+      - name: Ping Supabase via PostgreSQL
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          DATABASE_URL: ${{ secrets.SUPABASE_DATABASE_URL }}
         run: |
-          curl -s -o /dev/null -w "%{http_code}" \
-            "$SUPABASE_URL/rest/v1/auth_user?select=count" \
-            -H "apikey: $SUPABASE_SERVICE_KEY" \
-            -H "Authorization: Bearer $SUPABASE_SERVICE_KEY" \
-            && echo " - Supabase ping successful!"
+          sudo apt-get install -y postgresql-client
+          psql "$DATABASE_URL" -c "SELECT 1;" && echo "Supabase PostgreSQL ping successful!"
 
       - name: Ping Upstash Redis
         env:
